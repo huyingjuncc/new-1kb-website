@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #181824;
+  --text: #ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #181824;
+  }
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: var(--background);
+  font-family: PingFang, Arial, Helvetica, sans-serif;
+}
+
+.text-gradient {
+  background-image: linear-gradient(to right, #1efb9c, #5dd1ff, #d36dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-title {
+  font-weight: 600;
+}
+.text-content {
+  color: rgba(255, 255, 255, 0.8);
+}
+.p-text-color1 {
+  background: linear-gradient(91deg, #d36dff 10.23%, #9243b5 89.78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p-text-color2 {
+  background: linear-gradient(90deg, #07d6ff 4.26%, #056f84 94.68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p-text-color3 {
+  background: linear-gradient(90deg, #1efb9c 30.57%, #0aab65 89.83%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p-divider{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1px;
+  height: 44px;
+  background: linear-gradient(180deg, rgba(159, 159, 159, 0.00) 0%, #9F9F9F 50%, rgba(159, 159, 159, 0.00) 100%);
+}
