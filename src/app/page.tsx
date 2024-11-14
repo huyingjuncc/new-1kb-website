@@ -337,7 +337,7 @@ export default function Home() {
               <div className="relative flex-[0_0_100%]">
                 <div className="mb-[40px]">
                   <div className="md:mb-[12px] mb-[24px] md:text-[24px] text-[32px] md:leading-[24px] leading-[28px] text-title">
-                    MTI （Momentum & Timing Investment）
+                    MTI (Momentum & Timing Investment)
                   </div>
                   <div className="md:text-[20px] text-[24px] leading-[33px] text-content">
                     趋势择时策略投资着眼于加密货币二级市场的现货零杠杆主动管理投资。MTI投资策略立足趋势跟踪和择时交易这两大原则，在行情行进中进行右侧操作。
@@ -346,7 +346,7 @@ export default function Home() {
                 <div className="flex w-full w-full md:flex-no-wrap flex-wrap">
                   <div className="relative md:w-[39%] w-[50%] flex flex-col md:mb-0 mb-[66px]">
                     <div className="md:text-[48px] text-[64px] md:leading-[40px] leading-[64px] text-title p-text-color1">
-                      300
+                      400
                       <span className="text-[36px] align-bottom leading-[50px] md:leading-[38px]">
                         %
                       </span>
@@ -386,14 +386,17 @@ export default function Home() {
               </div>
               <div className="relative flex-[0_0_100%]">
                 <div className="mb-[40px]">
+		  <div className="md:mb-[12px] mb-[24px] md:text-[24px] text-[32px] md:leading-[24px] leading-[28px] text-title">
+                    AI (Alts Investment)
+                  </div>
                   <div className="md:text-[20px] text-[24px] leading-[33px] text-content">
-                    Al数字资产投资策略立足市场基本面，进行多元化的币种选择。投资组合覆盖前100主流币种与高增长潜力的非主流币种。通过配置多元化资产，在控制投资风险的前提下，获取更高的上涨空间，抓住牛市机遇，获得超过市场平均表现的超额收益。
+                    山寨精选策略投资立足市场基本面，进行多元化的币种选择。投资组合覆盖前100主流币种与高增长潜力的非主流币种。通过配置多元化资产，在控制投资风险的前提下，获取更高的上涨空间，抓住牛市机遇，获得超过市场平均表现的超额收益。
                   </div>
                 </div>
                 <div className="flex w-full w-full md:flex-no-wrap flex-wrap">
                   <div className="relative md:w-[39%] w-[50%] flex flex-col md:mb-0 mb-[66px]">
                     <div className="md:text-[48px] text-[64px] md:leading-[40px] leading-[64px] text-title p-text-color1">
-                      <span className="align-bottom">90</span>
+                      <span className="align-bottom">100</span>
                       <span className="text-[36px] align-bottom leading-[50px] md:leading-[38px]">
                         %
                       </span>
@@ -660,9 +663,7 @@ export default function Home() {
               alt=""
             />
             <span className="ml-[12px] md:text-[20px] text-[28px] md:leading-[30px] leading-[40px]">
-              SUN INDUSTRIAL CENTRE
-              <br />
-              NO. 16 SHING YIP STREET KL, HONG KONG
+              90 Connaught Road Central, Hong Kong
             </span>
           </div>
         </div>
