@@ -361,7 +361,7 @@ export default function Home() {
                   </div>
                   <div className="relative md:w-[39%] w-[50%] flex flex-col justify-center items-center md:mb-0 mb-[66px]">
                     <div className="md:text-[48px] text-[64px] md:leading-[40px] leading-[64px] text-title p-text-color2">
-                      45
+                      62
                       <span className="text-[36px] align-bottom leading-[50px] md:leading-[38px]">
                         %
                       </span>
@@ -405,7 +405,7 @@ export default function Home() {
                       </span>
                     </div>
                     <div className="mt-[20px] text-[24px] leading-[33px]">
-                      2024年至今收益
+                      2023年-2024年跑赢ETH
                     </div>
                     <div className="hidden md:block p-divider"></div>
                   </div>
