@@ -1,9 +1,16 @@
 "use client";
 import Header from "@/components/header";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Transition } from "react-transition-group";
 import { InView } from "react-intersection-observer";
 import Image from "next/image";
+// import data from '/page-text.json';
+// console.log('data',data);
+const request = async () => {
+  const res = await fetch('/page-text.json');
+  const data = await res.json();
+  return data
+}
 export default function Home() {
   const [product, setProduct] = useState("MTI");
   const handleClick = (key: string) => {
@@ -51,6 +58,14 @@ export default function Home() {
       id: "contact",
     },
   ];
+  // const [pageText,setPageText] = useState({})
+  // useEffect(() => {
+  //   request().then(data => {
+  //     console.log('data', data);
+      
+  //   });
+    
+  // }, []);
   return (
     <div className=" min-h-[100%]">
       <Header />
@@ -138,40 +153,59 @@ export default function Home() {
             <div className="text-center md:text-[28px] text-[24px] md:leading-[40px] leading-[25px] md:mb-[20px] mb-[24px]">
               我们的合作伙伴
             </div>
-            <div className="flex md:items-center justify-around md:px-[9%] md:flex-no-wrap flex-wrap md:px-0 px-[64px]">
-              <div className="md:w-[108px] md:h-[30px] w-[172px] h-[48px] md:mb-0 mb-[36px]">
+            {/* <div className="grid md:grid-cols-6 grid-cols-3 md:px-[5%] md:px-0 px-[32px] place-content-center	"> */}
+            <div className="flex md:items-center justify-around md:flex-no-wrap flex-wrap">
+              <div className="md:flex-[0_0_16.66%] flex-[0_0_33.33%] flex justify-center">
                 <Image
-                  width={172}
-                  height={48}
+                  width={120}
+                  height={32}
                   src="/images/partner1.png"
-                  className="w-full"
+                  className="md:w-[100px] md:h-[27px] w-[120px] h-[32px] md:mb-0 mb-[36px]"
                   alt=""
                 />
               </div>
-              <div className="md:w-[141px] md:h-[30px] w-[224px] h-[48px] md:mb-0 mb-[36px]">
+              <div className="md:flex-[0_0_16.66%] flex-[0_0_33.33%] flex justify-center">
                 <Image
-                  width={224}
-                  height={48}
+                  width={141}
+                  height={40}
                   src="/images/partner2.png"
-                  className="w-full"
+                  className="md:w-[95px] md:h-[27px] w-[141px] h-[40px] md:mb-0 mb-[36px]"
                   alt=""
                 />
               </div>
-              <div className="md:w-[71px] md:h-[21px] w-[110px] h-[32px]">
+              <div className="md:flex-[0_0_16.66%] flex-[0_0_33.33%] flex justify-center">
                 <Image
-                  width={110}
+                  width={115}
                   height={32}
                   src="/images/partner3.png"
-                  className=""
+                  className="md:w-[97px] md:h-[27px] w-[115px] h-[32px]"
                   alt=""
                 />
               </div>
-              <div className="md:w-[110px] md:h-[30px] w-[180px] h-[48px]">
+              <div className="md:flex-[0_0_16.66%] flex-[0_0_33.33%] flex justify-center">
                 <Image
-                  width={180}
-                  height={48}
+                  width={140}
+                  height={33}
                   src="/images/partner4.png"
-                  className=""
+                  className="md:w-[115px] md:h-[27px] w-[140px] h-[33px]"
+                  alt=""
+                />
+              </div>
+              <div className="md:flex-[0_0_16.66%] flex-[0_0_33.33%] flex justify-center">
+                <Image
+                  width={184}
+                  height={42}
+                  src="/images/partner5.png"
+                  className="md:w-[121px] md:h-[27px] w-[184px] h-[42px]"
+                  alt=""
+                />
+              </div>
+              <div className="md:flex-[0_0_16.66%] flex-[0_0_33.33%] flex justify-center">
+                <Image
+                  width={158}
+                  height={42}
+                  src="/images/partner6.png"
+                  className="md:w-[103px] md:h-[27px] w-[158px] h-[42px]"
                   alt=""
                 />
               </div>
@@ -386,9 +420,6 @@ export default function Home() {
               </div>
               <div className="relative flex-[0_0_100%]">
                 <div className="mb-[40px]">
-		  <div className="md:mb-[12px] mb-[24px] md:text-[24px] text-[32px] md:leading-[24px] leading-[28px] text-title">
-                    AI (Alts Investment)
-                  </div>
                   <div className="md:text-[20px] text-[24px] leading-[33px] text-content">
                     山寨精选策略投资立足市场基本面，进行多元化的币种选择。投资组合覆盖前100主流币种与高增长潜力的非主流币种。通过配置多元化资产，在控制投资风险的前提下，获取更高的上涨空间，抓住牛市机遇，获得超过市场平均表现的超额收益。
                   </div>
@@ -396,7 +427,7 @@ export default function Home() {
                 <div className="flex w-full w-full md:flex-no-wrap flex-wrap">
                   <div className="relative md:w-[39%] w-[50%] flex flex-col md:mb-0 mb-[66px]">
                     <div className="md:text-[48px] text-[64px] md:leading-[40px] leading-[64px] text-title p-text-color1">
-                      <span className="align-bottom">100</span>
+                      <span className="align-bottom">90</span>
                       <span className="text-[36px] align-bottom leading-[50px] md:leading-[38px]">
                         %
                       </span>
