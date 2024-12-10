@@ -420,6 +420,9 @@ export default function Home() {
               </div>
               <div className="relative flex-[0_0_100%]">
                 <div className="mb-[40px]">
+                  <div className="md:mb-[12px] mb-[24px] md:text-[24px] text-[32px] md:leading-[24px] leading-[28px] text-title">
+                    AI (Alts Investment)
+                  </div>
                   <div className="md:text-[20px] text-[24px] leading-[33px] text-content">
                     山寨精选策略投资立足市场基本面，进行多元化的币种选择。投资组合覆盖前100主流币种与高增长潜力的非主流币种。通过配置多元化资产，在控制投资风险的前提下，获取更高的上涨空间，抓住牛市机遇，获得超过市场平均表现的超额收益。
                   </div>
@@ -564,7 +567,7 @@ export default function Home() {
                           </div>
                           <div className="flex items-center md:mb-[12px] mb-[24px] md:justify-start justify-between">
                             <div className="md:text-[20px] text-[40px] md:leading-[28px] leading-[40px] mr-[16px]">
-                              李炫Sean Li
+                              Sean Li
                             </div>
                             <a
                               href="https://x.com/SL1000x"
@@ -624,7 +627,7 @@ export default function Home() {
                           </div>
                           <div className="flex items-center md:mb-[12px] mb-[24px] md:justify-start justify-between">
                             <div className="md:text-[20px] text-[40px] md:leading-[28px] leading-[40px] mr-[16px]">
-                              胡卓伊 Suki Hu
+                              Suki Hu
                             </div>
                             <a
                               href="https://x.com/kkbst88"
